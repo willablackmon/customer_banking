@@ -17,6 +17,11 @@ def create_cd_account(balance, interest_rate, months):
     #  Hint: You need to add the interest as a value, i.e, 0.
     # ADD YOUR CODE HERE
 
+    
+
+
+    print("I'm in create_cd_account")
+
     # Calculate interest earned
     # ADD YOUR CODE HERE
 
@@ -30,4 +35,4 @@ def create_cd_account(balance, interest_rate, months):
     # ADD YOUR CODE HERE
 
     # Return the updated balance and interest earned.
-    return  # ADD YOUR CODE HERE
+    return 1, 200  # ADD YOUR CODE HERE

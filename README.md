@@ -9,8 +9,6 @@ new repository for this project: __customer_banking__
 https://bootcampspot.instructure.com/courses/6442/assignments/80409?module_item_id=1260685
 
 
-
-
 # Main Function
 
 ## Create the Main Function

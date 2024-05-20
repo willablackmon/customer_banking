@@ -1,4 +1,4 @@
-""" Create a Account class with methods"""
+""" Create an Account class with methods"""
 
 class Account:
     """Creating an Account class with methods"""
