@@ -1,5 +1,4 @@
-"""Import the Account class from the Account.py file."""
-# ADD YOUR CODE HERE
+from Account import Account
 
 # Define a function for the Savings Account
 def create_savings_account(balance, interest_rate, months):          
@@ -14,28 +13,21 @@ def create_savings_account(balance, interest_rate, months):
         float: The updated savings account balance after adding the interest earned.
         And returns the interest earned.
     """
-    # Create an instance of the `Account` class and pass in the balance and interest parameters.
-    #  Hint: You need to add the interest as a value, i.e, 0.
-
-    # Account(self, balance, interest)
-    sav_acct = Account(balance, interest_rate, months)
+# Create an instance of the `Account` class and pass in the balance and interest parameters.
+    # print(f'\n>> balance {balance}; interest_rate {interest_rate}; months {months}')
+    sav_acct = Account(balance, interest_rate)
     
-    # set_balance(self, balance):
-    # set_interest(self, interest)
+# Calculate interest earned
+    interest_earned = float(balance) * (float(interest_rate)/100 * int(months)/12)
 
-    print("I'm in create_savings_account")
+# Update the savings account balance by adding the interest earned
+    updated_balance = float(balance) + interest_earned
 
-    # Calculate interest earned
-     # ADD YOUR CODE HERE
+# Pass the updated_balance to the set balance method using the instance of the SavingsAccount class.
+    sav_acct.set_balance(updated_balance)
 
-    # Update the savings account balance by adding the interest earned
-    # ADD YOUR CODE HERE
+# Pass the interest_earned to the set interest method using the instance of the SavingsAccount class.
+    sav_acct.set_interest(interest_earned)
 
-    # Pass the updated_balance to the set balance method using the instance of the SavingsAccount class.
-    # ADD YOUR CODE HERE
-
-    # Pass the interest_earned to the set interest method using the instance of the SavingsAccount class.
-    # ADD YOUR CODE HERE
-
-    # Return the updated balance and interest earned.
-    return 3,4 # ADD YOUR CODE HERE
+# Return the updated savings balance (float) and interest earned.
+    return updated_balance, interest_earned
