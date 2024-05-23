@@ -19,8 +19,8 @@ separated by a blank space >>  ''').split()
     updated_savings_balance, sav_interest_earned = create_savings_account(savings_balance, savings_interest, savings_maturity)
 
 # Print out the interest earned and updated savings account balance with interest earned for the given months.
-    print(f'''Your Savings Account has earned ${sav_interest_earned: .2f} in interest in the last {savings_maturity} months. 
-Your Savings Account balance is now: ${updated_savings_balance: .2f}''')
+    print(f'''\tYour Savings Account balance is now: ${updated_savings_balance: .2f}
+\tYour Savings Account has earned ${sav_interest_earned: .3f} in interest in the last {savings_maturity} months.''')
 
 # Prompt the user to set the CD balance, interest rate, and months for the CD account.
     cd_balance, cd_interest, cd_maturity = input(
@@ -31,11 +31,9 @@ separated by a blank space >>  ''').split()
     cd_updated_balance, cd_interest_earned = create_cd_account(cd_balance, cd_interest, cd_maturity)
 
 # Print out the interest earned and updated CD account balance with interest earned for the given months.
-    print(f'''Your CD has earned ${cd_interest_earned: .2f} in interest in the last {cd_maturity} months.  
-Your CD balance is now: ${cd_updated_balance: .2f}''')
+    print(f'''\tYour CD balance is now: ${cd_updated_balance: .2f}.  
+\tYour CD has earned ${cd_interest_earned: .3f} in interest in the last {cd_maturity} months.''')
     
-
 if __name__ == "__main__":
 # Call the main function.
     main()
-

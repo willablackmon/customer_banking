@@ -17,8 +17,10 @@ def create_cd_account(balance, interest_rate, months):
     cd_acct = Account(balance, interest_rate)
 
 # Calculate interest earned
+    interest_earned = 0
     interest_earned = float(balance) * (float(interest_rate)/100 * int(months)/12)
 # Update the CD account balance by adding the interest earned
+    updated_balance = 0
     updated_balance = float(balance) + interest_earned
 
 # Pass the updated_balance to the set balance method using the instance of the CDAccount class.
